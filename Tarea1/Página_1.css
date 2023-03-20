@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Rocko;
+    src: url(letra.ttf);
+}
+
+body{
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: -10px;
+    font-family: Rocko;
+    border: 1px solid rgba(0, 0, 0, 0.2); background-color: rgb(117, 115, 115);
+    padding-left: 8px;
+    padding-right: 5px; 
+}
+
+h1{
+    padding-top: 55px;
+    text-align: center;
+    text-transform:uppercase;
+    font-weight: 80;
+    font-size: 39px;
+    letter-spacing: 2px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(20, 116, 219);
+    text-shadow: 1px 6px 20px black;
+    text-transform:uppercase;
+}
+
+p{
+    text-align: justify;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 3;
+    letter-spacing: 1px;
+}
+
+li{
+    text-align: justify;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 1;
+    list-style-type: square;
+    list-style-color: blue;
+    
+    
+}
+
+.alinearimg{
+    text-align: center;
+    
+}
+
+.markazul{
+background-color: rgb(68, 207, 207);
+}

@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 1</title>
+    <body background="fondo.jpg"; width="10%"></body>
+    <link rel="stylesheet" href="Página_1.css">
+    <link rel="stylesheet" href="RockoFLF.ttf">
+
+</head>
+<body>
+    
+    <h1>Conceptos generales de la arquitectura cliente servidor</h1>
+    
+    <p>Las aplicaciones web utilizan lo que se conoce como clientes livianos (light clients) los cuales no ejecutan demasiadas labores de procesamiento para la ejecución de la aplicación misma. Desde el punto de vista de la arquitectura se distinguen dos lados; uno es el cliente, donde se encuentra el usuario final utilizando la aplicación por medio de un navegador (como Internet Explorer o Mozilla Firefox). A través de este cliente web, el usuario interactúa con la aplicación localizada al otro lado, en el servidor, que es donde residen realmente los datos, reglas y lógica de la aplicación.</p>
+    
+    <h2>'Problemas con las aplicaciones de escritorio'</h2>
+    
+    <p>Con la división del problema en dos partes, se logra centralizar la administración en general a un solo lado: el servidor. En él se resuelven una gran cantidad de problemas anteriormente encontrados en las aplicaciones de escritorio monousuario, como son:</p>
+    
+    <p> <li>Duplicidad de datos por la falta de unificación de los mismos.</li>
+        <li>Diseminación de la información y lógica en muchas partes (cada computador que la use).</li>
+        <li>Falta de portabilidad de la aplicación a diferentes sistemas operativos.</li>
+        <li>Traumas a la hora de realizar actualizaciones o correcciones al programa ya que las instalaciones están diseminadas.</li>
+        <li>La administración de la seguridad, ya que controlar el acceso de los usuarios a información no relevante o privada puede ser un caos.</li>
+        <li>Dificultad para configurar cada una de las instalaciones (deployments) dependiendo de las necesidades de cada usuario.</li>
+    </p>
+    
+    <h2>'LA WEB'</h2>
+    
+    <div class="alinearimg">
+        <img src="laweb.png" alt="laweb">
+    </div>
+    
+    <p>La Web se puede considerar como una plataforma o “sistema operativo” en el cual los recursos están distribuidos en la Red y están siendo extendidos en todo momento con posibilidades ilimitadas.</p>
+    
+    <p style="border-left: 3px solid rgb(46, 46, 46, 0.6) ; font-size: 25px; color: rgb(128, 128, 128, 0.9); padding-left:0; font-style: italic;" >La Web se ha hecho popular con aplicaciones tales como <i>clientes de correo, buscadores, portales, foros, chats, IRC, RSS, blogs, etc.</i>Además de estas aplicaciones de propósito general, existe adicionalmente una gran diversidad de soluciones que se acomodan al ambiente web, como son: Administradores de contenido (CMS), Administrador de proyectos, Suites para trabajo colaborativo, Administración de relaciones con el cliente (CRM), ERP, etc.</p>
+
+    <p>La Web se reinventa día a día. Lo que ayer parecía imposible hoy es una realidad. Hace un año, o quizás meses, no se podía entender que hubiera tantas opciones para realizar una hoja de cálculo en una plataforma web como docs.google.com, o que pudiéramos jugar a un juego animado de construcción de mundos (tipo Age of empires) en www. travian.net, o que existiese un sistema de búsqueda mapas y direcciones como maps.google.com.</p>
+
+    <p>Google es uno de los que más a ayudado al desarrollo y fomento de las aplicaciones web y sirve de infraestructura para llevar a cabo tales ideas.</p>
+
+    <p>Es cierto que la arquitectura cliente-servidor de la web ha ofrecido muchas ventajas, pero también es cierto que carece de la riqueza gráfica de las aplicaciones de escritorio que cuentan con controles inteligentes que dan mayor fluidez al trabajo del usuario. Esto ha sido resuelto con varias estrategias o tecnologías tales como AJAX, Flash y Web 2, entre otras. Así que en vez de ir perdiendo fuerza debido a la pobreza en sus interfaces gráficas, la Web busca alternativas que le permitan ofrecer todas sus ventajas, pero con la posibilidad de ofrecer controles visuales más amigables al trabajo del usuario.</p>
+    <h2>'arquitectura cliente servidor. elementos'</h2>
+    
+    <p>La arquitectura cliente-servidor es un modelo de aplicación distribuida en el que las tareas se reparten entre los proveedores de recursos o servicios, llamados servidores, y los demandantes, llamados clientes. Un cliente realiza peticiones a otro programa, el servidor, que le da respuesta. Esta idea también se puede aplicar a programas que se ejecutan sobre una sola computadora, aunque es más ventajosa en un sistema operativo multiusuario distribuido a través de una red de computadoras.</p>
+    
+    <p>En esta arquitectura la capacidad de proceso está repartida entre los clientes y los servidores, aunque son más importantes las ventajas de tipo organizativo debidas a la centralización de la gestión de la información y la separación de responsabilidades, lo que facilita y clarifica el diseño del sistema.</p>
+    
+    <p>La separación entre cliente y servidor es una separación de tipo lógico, donde el servidor no se ejecuta necesariamente sobre una sola máquina ni es necesariamente un solo programa. Los tipos específicos de servidores incluyen los servidores web, los servidores de archivo, los servidores del correo, etc. Mientras que sus propósitos varían de unos servicios a otros, la arquitectura básica seguirá siendo la misma.</p>
+    
+    <h3><b>Características</b></h3>
+
+    <p>En la arquitectura C/S el remitente de una solicitud es conocido como cliente. Sus características son:</p>
+
+    <p> <li>Es el que inicia solicitudes o peticiones. Tiene, por tanto, un papel activo en la comunicación (dispositivo maestro o amo).</li>
+        <li>Espera y recibe las respuestas del servidor.</li>
+        <li>Por lo general, puede conectarse a varios servidores a la vez.</li>
+        <li>Normalmente, interactúa directamente con los usuarios finales mediante una interfaz gráfica de usuario.</li>
+        <li>Al contratar un servicio de red, se debe de tener encuenta la velocidad de conexión que se le otorga al cliente y el tipo de cable que utiliza.</li>
+    </p>
+
+    <p>Al receptor de la solicitud enviada por el cliente se conoce como servidor. Sus características son:</p>
+
+    <p> <li>Al iniciarse espera a que le lleguen las solicitudes de los clientes. Desempeñan entonces un papel pasivo en la comunicación (dispositivo esclavo).</li>
+        <li>Tras la recepción de una solicitud, la procesan y luego envían la respuesta al cliente.</li>
+        <li>Por lo general, aceptan conexiones desde un gran número de clientes (en ciertos casos el número máximo de peticiones puede estar limitado).</li>
+        <li>No es frecuente que interactúen directamente con los usuarios finales.</li>
+    </p>
+    
+    <h2>'arquitectura de tres niveles'</h2>
+
+    <p>En la arquitectura en tres niveles existe un nivel intermedio. Esto significa que la arquitectura generalmente está compartida por:</p>
+
+    <p> <li>Un cliente, es decir, el equipo que solicita los recursos, equipado con una interfaz de usuario (generalmente un navegador web) para la presentación.</li>
+        <li>El servidor de aplicaciones (también denominado software intermedio), cuya tarea es proporcionar los recursos solicitados, pero que requiere de otro servidor para hacerlo.</li>
+        <li>El servidor de datos, que proporciona al servidor de aplicaciones los datos que éste le solicitó.</li>
+    </p>
+
+    <div class="alinearimg">
+        <img src="arqui3capas.png" alt="ar3c"; style="border: 1px solid gray; border-radius:30px 30px 30px 30px; width: 800px; height: 500px;">
+    </div>
+
+</body>
+</html>
